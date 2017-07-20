@@ -22,6 +22,7 @@
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  SOFTWARE.
  */
+var exec = require('cordova/exec');
 module.exports = {
     show: function (parameters, successCallback, errorCallback) {
         cordova.exec(successCallback, errorCallback, "ExoPlayer", "show", [parameters]);
